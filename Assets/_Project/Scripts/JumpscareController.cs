@@ -23,7 +23,7 @@ public class JumpscareController : MonoBehaviour
             if (coin == 0)
             {
                 animator.SetTrigger("Jumpscare");
-                jumpscareSoundPlay.PlayAudio();
+                // jumpscareSoundPlay.PlayAudio();
             }
         }
         
