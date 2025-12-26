@@ -16,12 +16,17 @@ public class StretchSpriteToScreen : MonoBehaviour
         float screenHeight = cam.orthographicSize * 2f;
         float screenWidth = screenHeight * cam.aspect;
 
-        Vector2 spriteSize = sr.sprite.bounds.size;
+        //Vector2 spriteSize = sr.sprite.bounds.size;
+
+        //Debug.Log(spriteSize.x);
+        //Debug.Log(spriteSize.y);
 
         transform.localScale = new Vector3(
-            screenWidth / spriteSize.x,
-            screenHeight / spriteSize.y,
+            screenWidth / 10.25f,
+            screenHeight / 7.69f,
             1f
         );
+
+        // sr.sprite = null;
     }
 }
